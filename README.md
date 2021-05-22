@@ -1,27 +1,34 @@
 # MonthPicker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+This application demonstrates a custom month selector control for angular applications. The custom control is built using bootstrap framework. The month selector control is responsive supporting wide range of devices. 
+## Setup
+1. Clone this repo using the following command
+git@github.com/SudhakarPalanisamy/MonthPicker.git
 
-## Development server
+2. Move to the repo that you have just cloned and run the following command
+npm install
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+3. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Tech Stack
+Following is the tech stack:
+1. Angular 11.2.13
+2. Bootstrap
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Directory Structure
+1. dist - Contains the distributable version of the project. Ideally this folder gets pushed into the Docker or production server.
+2. src - Contains the source code of the app.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Features
+1. Provides option to select month and year
+2. Can be disabled using an input value
+3. Responsive
+4. Keyboard can be used to select the value
+5. Value can be entered directly without having to select in the popup
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Future Improvements
+1. Add unit testing
+2. Add the Required, Min, Max validations
+3. Provide an option to go to specific year in the popup
