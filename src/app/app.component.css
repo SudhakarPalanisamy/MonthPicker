@@ -1,0 +1,119 @@
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+html {
+    font-family:Roboto,"Helvetica Neue",sans-serif;
+    font-size:14px;
+}
+html, body {
+    height:100%;
+    position:relative;
+}
+
+.main-container {
+    width:100%;
+    min-height:100vh;
+    overflow:hidden;
+    display:block;
+    position:relative;
+    padding-bottom:55px;
+}
+
+
+.bg-logobar {
+background-color:#002247;
+color:#fff;
+}
+
+.logo-img {
+max-height:40px;
+}
+.username {
+font-size: 1.143em;
+text-align:right;
+}
+
+
+footer {
+position:absolute;
+bottom:0;
+width:100%;
+}
+.title-bar {
+    min-height:40px;
+    background:#6d6e71;
+    padding: 0.714em;
+    font-size:0.857em;
+    color:#fff;
+}
+
+
+@media(min-width: 320px) {
+    .logosection {
+    text-align:center;
+    }
+    .navbar-brand {
+    font-size:14px;
+    }
+
+    .navbar-bg {
+    background-color:#6d6e71;
+    padding: 5px 10px !important;
+    }
+
+    .logosection img {
+        width:100%;
+    }
+}
+
+@media(min-width: 480px) {
+    .logosection img {
+        width: auto;
+    }
+}
+
+@media(min-width: 768px) {
+    .logosection {
+        text-align: left;
+    }
+
+    .navbar-brand {
+        display: none!important;
+    }
+
+    .navbar-bg {
+        height:30px;
+        padding: 0px 1rem !important;
+    }
+
+    .logosection img {
+        width: 100%;
+    }
+}
+
+@media(min-width: 880px) {
+    .logosection img {
+        width: auto;
+    }
+}
+
+
+@media(max-width: 767px) {
+
+    .navbar-bg  li.nav-item{
+       border-bottom: 1px solid #fff;
+    }
+    .navbar-bg.navbar-expand li.nav-item {
+        border: 0px solid #fff!important;
+        margin: 0px!important;
+    }
+
+    .navbar-bg a.nav-link {
+        padding: 5px 0px;
+    }
+
+    .navbar-bg li.nav-item:first-child {
+        border-top:1px solid #fff;
+        margin-top:10px;
+    }
+}

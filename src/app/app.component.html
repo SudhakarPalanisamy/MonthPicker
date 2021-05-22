@@ -1,0 +1,63 @@
+<div class="main-container">
+  <header>
+      <div class="container-fluid">
+          <div class="row bg-logobar py-2 px-3">
+              <div class="col-12 col-md-5 logosection">
+                      <!--<img src="" class="img-responsive logo-img" alt="logo" />-->
+                      <h1>Demo Application</h1>
+              </div>
+              <div class="my-2 col-12 col-md-7 username my-md-auto d-none d-md-block">
+                  <span>
+                      <fa-icon [icon]="['fas', 'user']" class="fa-lg"></fa-icon>&nbsp;&nbsp; Guest
+                  </span>
+              </div>
+          </div>
+      </div>
+
+      <nav class="navbar navbar-expand-md navbar-dark navbar-bg py-0">
+         
+      </nav>
+
+  </header>
+  <section>
+      <div class="container-fluid mb-4">
+        <div class="col-12 col-md-4 mt-4">
+           <h5>Month Picker</h5>
+        </div>
+        <div class="col-12 col-md-3">
+            <app-month-picker [model]="model1" placeHolder="MM/YYYY" 
+            (onSelectedItem)="model1=$event"></app-month-picker>
+        </div>
+        <div class="col-12 col-md-4" *ngIf="model1 != ''">
+            Selected Value: {{model1}}
+        </div>
+
+        <div class="col-12 col-md-4 mt-4">
+            <h5>Disabled Month Picker</h5>
+        </div>
+         <div class="col-12 col-md-3">
+             <app-month-picker [model]="model2" [disabled]="disabled" placeHolder="MM/YYYY" 
+             (onSelectedItem)="model2=$event"></app-month-picker>
+         </div>
+
+         <div class="col-12 col-md-4 mt-4">
+            <h5>Value passed from Parent</h5>
+         </div>
+         <div class="col-12 col-md-3">
+             <app-month-picker [model]="model3" placeHolder="MM/YYYY" 
+             (onSelectedItem)="model3=$event"></app-month-picker>
+         </div>
+         <div class="col-12 col-md-4" *ngIf="model3 != ''">
+             Selected Value: {{model3}}
+         </div>
+   </div>
+  </section>
+
+  <footer #footerElement>
+      <div class="title-bar row">
+          <div class="col-8 text-left">
+              &copy; For demo use only
+          </div>
+      </div>
+  </footer>
+</div>

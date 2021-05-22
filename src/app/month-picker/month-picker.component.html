@@ -1,0 +1,45 @@
+<div>
+    <div class="input-group">
+        <input class="form-control" id="customMonth" [name]="name" [placeholder]=placeHolder type="text"
+        [(ngModel)]="model" (blur)="onMonthChange()" (focus)="showDate = !showDate" 
+        [disabled]="disabled">
+        
+        <div class=calendar-btn-group>
+            <button class="btn btn-outline-secondary" (click)="showDate = !showDate" [disabled]="disabled" type="button">
+                <fa-icon [icon]="['far', 'calendar-alt']"></fa-icon>
+            </button>
+        </div>    
+    </div>
+
+    <div id="monthCalendar" *ngIf="showDate" class="calendar" (keydown)="handleKeyboardEvent($event)">
+        <div class="col-12">
+            <div class="row m-1">
+                    <div class="col-2 p-0">
+                    <button class="month-button btn btn-default"
+                        (click)="onPrevYearSelected()">
+                        <fa-icon [icon]="['fas', 'chevron-left']"></fa-icon>
+                        </button>        
+                    </div>
+                    <div class="col-8 p-0">
+                        <button class="month-button btn btn-default">
+                            <span class="month-label">{{currentYear}}</span>
+                        </button>
+                    </div>
+                
+                    <div class="col-2 p-0">
+                        <button class="month-button btn btn-default"
+                        (click)="onNextYearSelected()">
+                        <fa-icon [icon]="['fas', 'chevron-right']"></fa-icon>
+                        </button>        
+                    </div>
+            </div>
+            <div class="row m-1">
+                <div class="col-4 p-0" *ngFor="let month of monthList">
+                    <button class="month-button btn btn-default" [ngClass]="getCustomClass(month.Id)" type="button" (click)="onMonthSelect(month.Id)">
+                        <span class="month-label" [ngClass]="getCustomLabelClass(month.Id)">{{month.Text}}</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

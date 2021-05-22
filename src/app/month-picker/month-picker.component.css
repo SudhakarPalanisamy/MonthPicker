@@ -1,0 +1,115 @@
+.month-button{
+    width: 100%;    
+}
+
+.year-button{
+    text-align: center;
+}
+
+
+.calendar{
+   
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+   
+}
+
+
+.month-label{
+    font-weight: normal;
+    font-size: 14px!important;
+}
+
+.current-month-btn{
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+}
+
+.selected-btn{
+    background-color: #2aabd2!important;
+    border-color:#2aabd2!important;
+    background-position: 0 -15px;
+    color:#ffffff;
+}
+
+.btn-default{
+    cursor:pointer;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.75);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+.btn-default:active,
+.btn-default.active{
+
+    webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.btn-default:disabled,
+.btn-default.disabled,
+fieldset[disabled] .btn-default{
+
+    webkit-box-shadow: inone;
+    box-shadow: none;
+}
+
+.btn-default .badge{
+    text-shadow: none;
+}
+
+.btn:active,
+.btn.active{
+    background-image: none;
+}
+
+.btn-default{
+    text-shadow: 0 1px 0 #fff;
+    background-image: -webkit-linear-gradient(top, #fff 0% #e0e0e0 100%);
+    background-image: -o-linear-gradient(top, #fff 0% #e0e0e0 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0));
+    background-image: linear-gradient(to bottom, #fff 0%, #e0e0e0 100%);
+    background-repeat: repeat-x;
+    border-color: #dbdbdb;
+    border-color:#ccc;
+
+}
+
+.btn-default:hover,
+.btn-default:focus{
+    background-color: #e0e0e0; 
+    background-position: 0 -15px;
+}
+
+.btn-default:active,
+.btn-default.active{
+    background-color: #e0e0e0;
+    border-color:#dbdbdb;
+}
+
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active{
+
+    background-color: #e0e0e0;
+    background-image: none;
+}
